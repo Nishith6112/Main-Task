@@ -1,0 +1,75 @@
+<!-- Medium Task 1 :-Build a Contact Form: usnig Create a form with text, email,
+  radio, checkboxes, select dropdown, submit and reset buttons. 
+ Use <label> and required attributes. -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+          <h1>Forms in Html</h1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name</label>
+            <input type=" text" placeholder="Enter Name" required>
+
+        </div><br>
+           <div>
+            <label for="ph">Phone.no</label>
+            <input id="ph" type="tel" placeholder="Enter Phone Number" required>
+        </div><br>
+
+           <div>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="Enter E-mail" required>
+        </div><br>
+
+        <div>
+            <label for="paswwword">Password</label>
+            <input id="Password" type="password" placeholder="Enter Password" required>
+        </div><br>
+
+        <div>
+            <label for="dob">DOB</label>
+            <input id="dob" type="date" placeholder="Enter DOB" required>
+        </div><br>
+
+        <div>
+            <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female" >Female</option>
+                    <option value="other">Other</option>
+                </select>
+        </div>
+
+        <div>
+            <p><h3>Netflix Plan</h3></p>
+             <input id="1month" type="radio" name="Plan" value="1month">
+            <label for="1month">1 Month</label><br>
+           
+            <input id="6months" type="radio" name="Plan" value="6months">
+             <label for="6months">6 Months</label><br>
+            
+            <input id="1Year" type="radio" name="Plan" value="1Year">
+             <label for="1Year">1 Year</label>
+
+        </div>
+
+     <div>
+         <h3>Required to check the condition</h3>
+         <input type="checkbox" id="iagree" value="iagree">
+         <label for="iagree">I agree</label>
+    </div><br>
+    <div>
+        <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </div>
+  </form>
+
+
+    </body>
+    </html>
